@@ -6,7 +6,8 @@ public class Aim : MonoBehaviour {
 
 	public Transform target; 
 
-	//any
+	//anything please is a better comment
+
 
 	public float speed;
 	public float fRadius = 3.0f;
