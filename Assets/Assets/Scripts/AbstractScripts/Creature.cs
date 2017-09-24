@@ -76,7 +76,7 @@ public abstract class Creature : MonoBehaviour {
 
 	public void enterAura(Collider2D col){
 		if (col.tag == "buffAura") {
-			//StatusEffect s = col.gameObject
+			StatusEffect s = col.gameObject.GetComponent<StatusEffect> ();
 		}
 
 		else if (col.tag == "debuffAura") {
