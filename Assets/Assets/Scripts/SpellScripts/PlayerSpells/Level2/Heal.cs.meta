@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0930464b27f67ac4c8c26ecbf3d120b9
+timeCreated: 1492832189
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - spellPrefab: {fileID: 1850413794571976, guid: f8710161d78864e49868c8b0b45dfdc2,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
