@@ -8,6 +8,8 @@ public abstract class StatusEffect{
 	public float timeLeft;
 	public string id;
 
+	public Creature target;
+
 	public int stackSize;
 
 	public bool timed;
@@ -16,14 +18,21 @@ public abstract class StatusEffect{
 	// depending on what is needed, give the effect generic access to an enemy, creature, or the player upon activation/initialization
 	// that is why no generic object variable is declared here, leave it to each individual effect
 
-	// Use this for initialization
-	void Start () {
+
+	public override bool Equals(object obj){
 		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		StatusEffect other = obj as StatusEffect;
+
+		if (other == null) {
+			return false;
+		}
+
+		if (this.id.Equals(other.id)) {
+			return true;
+		} else {
+			return false;
+		}
+
 	}
 
 	public void decrementTime(){

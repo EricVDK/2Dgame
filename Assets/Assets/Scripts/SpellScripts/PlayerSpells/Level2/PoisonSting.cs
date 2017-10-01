@@ -34,7 +34,7 @@ public class PoisonSting : Projectile {
 		} else {
 
 			PoisonStingEffect debuff = new PoisonStingEffect ();
-			debuff.victim = e;
+			debuff.target = e;
 			e.effectList.Add (debuff);
 		}
 	}

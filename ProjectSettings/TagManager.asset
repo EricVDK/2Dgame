@@ -7,6 +7,8 @@ TagManager:
   - TalkBox
   - PlayerHitBox
   - EnemyHitBox
+  - buffAura
+  - debuffAura
   layers:
   - Default
   - TransparentFX

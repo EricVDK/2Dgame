@@ -11,7 +11,7 @@ public class Shrub : Enemy {
 		Rigidbody2D playerRb = player.GetComponent<Rigidbody2D> ();
 		rb = GetComponent<Rigidbody2D> ();
 		attacking = false;
-
+		InvokeRepeating ("regenHealth", 0f, 1f);
 	}
 	
 	// Update is called once per frame

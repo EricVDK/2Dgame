@@ -11,7 +11,7 @@ public class PoisonStingEffect : StatusEffect {
 	private float intervalTimer = -1;
 	private bool applyOnce = true;
 
-	public Creature victim;
+
 
 	public PoisonStingEffect(){
 		totalDuration = 5f;
@@ -27,14 +27,14 @@ public class PoisonStingEffect : StatusEffect {
 	public override void applyEffect(){
 		
 		if (applyOnce) {
-			victim.speed -= slow;
+			target.speed -= slow;
 			applyOnce = false;
 		}
 		applyOnInterval ();
 	}
 
 	public override void reverseEffect(){
-		victim.speed += slow;
+		target.speed += slow;
 	}
 
 	public void applyOnInterval(){
@@ -42,7 +42,7 @@ public class PoisonStingEffect : StatusEffect {
 			intervalTimer -= Time.deltaTime;
 		} else {
 			intervalTimer = 1;
-			victim.takeDmg (damage);
+			target.takeDmg (damage);
 		}
 	}
 }
